@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "db": "sqlite3 database.sqlite < schema.sql",
+    "start": "node index.js"
+  },
   "dependencies": {
     "axios": "^0.23.0",
     "dotenv": "^10.0.0",
