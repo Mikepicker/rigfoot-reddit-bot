@@ -1,0 +1,13 @@
+{
+  "name": "rigfoot-reddit-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.23.0",
+    "dotenv": "^10.0.0",
+    "snoostorm": "^1.5.2",
+    "snoowrap": "^1.23.0",
+    "sqlite3": "^5.0.2"
+  }
+}
