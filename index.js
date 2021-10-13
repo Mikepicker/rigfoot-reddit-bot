@@ -53,13 +53,12 @@ comments.on('item', async comment => {
   // check if already responded
   try {
     const c = await findComment(comment.id)
-    console.log('ASDSASASAD', c)
     if (c.rows.length > 0) {
       console.log(`Comment ${comment.id} already handled`)
       return
     }
   } catch (err) {
-    console.log('ERR', err)
+    console.log('Db error:', err)
     return
   }
 
@@ -77,7 +76,7 @@ comments.on('item', async comment => {
       putComment(comment.id)
     } catch (err) {
       if (err) {
-        console.log(err)
+        console.log('Rigfoot error:', err)
       }
     }
   }
