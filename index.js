@@ -16,7 +16,7 @@ const client = new Snoowrap({
 })
 
 const comments = new CommentStream(client, {
-  subreddit: 'testingground4bots',
+  subreddit: 'guitarpedals',
   limit: 10,
   pollTime: 2000
 })
